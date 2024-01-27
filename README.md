@@ -1,14 +1,24 @@
+# **Objective**
+The goal of this project is to build a machine learning model that predicts the fare of a taxi trip before riding to make it easier for users, especially tourists and strangers, to know how much they will pay.
+
 # **EXECUTIVE SUMMARY**    
-The objective of this project is to build a machine learning model that will predict taxicab trip fare before riding based on 2022 NYC Yellow Cab trip record data (https://data.cityofnewyork.us/Transportation/2022-Yellow-Taxi-Trip-Data/qp3b-zxtp).
+This project based on 2022 NYC Yellow Cab trip record data (https://data.cityofnewyork.us/Transportation/2022-Yellow-Taxi-Trip-Data/qp3b-zxtp).
 To that end, I will demonstrate the phases of the data science pipeline:
-1. **[Random Sampling](#sampl)** Make a Random Sample from the large original CSV file with (39.7 Milions rows & Size More than 3.5 GB) to make the analysis and modeling process more efficient: 
-2. **[Preprocessing](#prep)**: Clean and transform the data into a usable format for analysis.
-3. **[Exploratory Analysis](#eda)**: Perform exploratory analysis to identify the best features to be used for modeling.  And Test the Models Assumptions to choose suitable model for the data
-4. **[Algorithm Development](#ml)**: Train, test, and refine various models to predict the target variable.  Given that our dependent variable `trip_duration` is a continuous outcome,  the regression algorithms to be protoyped are as follows:
+1. **[Random Sampling](#sampl)** Make a Random Sample from the large original CSV file with (39.7 Milions rows & Size More than 3.5 GB) to make the analysis and modeling process more efficient.
+2. **[Exploratory Data Analysis-EDA](#eda)**
+    1. **[Discovering & Structuring](#discStruc)** Check out the overall shape, size, and content of the dataset and transform the data into a usable format for analysis.
+    2. **[Cleaning](#clean)**: Check for outliers, missing data, and needs for conversions or transformations.
+    3. **[Feature Engineering](#fEng)**:
+        1. **[Feature Transformation](#fTrans)**
+        2. **[Feature Selection](#fSel)**
+        3. **[Feature Engineering](#fEng2)**
+    4. **[Validating](#Valid)** Validate Data to ensure it's ready for modeling phase.
+    5. **[Presenting](#present)**: Presenting EDA findings.
+3. **[Algorithm Development](#ml)**: Train, test, and refine various models to predict the target variable.  Given that our dependent variable `trip_duration` is a continuous outcome,  the regression algorithms to be protoyped are as follows:
  - [Multivarite Linear Regression](#linear)  
 
 
-5. **[Model Deployment](#deployment)**: Apply the best performing model to the test set for contest submission.
+4. **[Model Deployment](#deployment)**: Apply the best performing model to the test set for contest submission.
 
 
 # **ABOUT THE DATA**  
